@@ -1,0 +1,213 @@
+{
+    "items": [
+        {
+            "product_id": "1",
+            "product_name": "Leaf Phone Case Plastic",
+            "product_image": "images/products/p1.png",
+            "product_image_array": [
+                "images/products/p1.png",
+                "images/products/p2.png",
+                "images/products/p3.png"
+            ],
+            "product_seller": "tracymcgrady",
+            "product_price": "AED 230",
+            "product_desc": "Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum Lorem Psum",
+            "product_tags": [
+                "iphone","cases","mobile","phones","macbookpro"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is the Best This Product is the BestThis Product is the BestThis Product is the Best",
+                    "pr_comment_image":"images/post_01.png"
+                },
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_02.png"
+                }
+            ],
+            "product_distance":"10km",
+            "product_likes":"12",
+            "product_au_image":"images/user_01.png"
+        },
+        {
+            "product_id": "2",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        },
+
+        {
+            "product_id": "3",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        },
+        {
+            "product_id": "4",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        },
+        {
+            "product_id": "5",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        },
+        {
+            "product_id": "6",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        },
+        {
+            "product_id": "7",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        },
+        {
+            "product_id": "8",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        },
+        {
+            "product_id": "9",
+            "product_name": "Samsung Laptop",
+            "product_image": "images/products/p3.png",
+            "product_seller": "thetest1",
+            "product_price": "AED 300",
+            "product_desc": "Lorem Psum",
+            "product_tags": [
+                "laptop","samsung"
+            ],
+            "product_comments": [
+                {
+                    "pr_comment_name":"Heshan 1",
+                    "pr_comment":"This Product is Good",
+                    "pr_comment_image":"images/post_01.png"
+
+                }
+            ],
+            "product_distance":"1km",
+            "product_likes":"5",
+            "product_au_image":"images/user_02.png"
+        }
+
+    ]
+}

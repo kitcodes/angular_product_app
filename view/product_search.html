@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>e-Commerce Web Site</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="css/rangeslider.css">
+</head>
+<body ng-app="productapp" class="product-search-page">
+<div class="wr-outer" ng-controller="searchPageCtrl">
+    <div class="wr-row wr-search">
+        <div class="wr-form">
+            <div class="form-col">
+                <input class="pr-search-input" placeholder="What are you looking for?" type="text"/>
+            </div>
+            <div class="form-col form-border">
+                <p>
+                    <span>Search within</span>
+                    <output></output>
+                    <span>km</span>
+                </p>
+                <input type="range" class="product-range-slider" value="0" data-rangeslider>
+            </div>
+            <div class="form-col">
+                <h4>Trending Search</h4>
+                <div class="form-trends">
+                    <span ng-repeat="trendItem in trendList">#{{ trendItem }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <ul>
+        <li>
+            <a href="index.html"><img src="images/ico-home.png"/></a>
+        </li>
+        <li>
+            <a><img src="images/ico-love.png"/></a>
+        </li>
+        <li>
+            <a><img src="images/ico-cam.png"/></a>
+        </li>
+        <li>
+            <a><img src="images/ico-user.png"/></a>
+        </li>
+        <li>
+            <a><img src="images/ico-search.png"/></a>
+        </li>
+    </ul>
+</footer>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/rangeslider.js"></script>
+<script type="text/javascript" src="js/product_control.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/ng-infinite-scroll.min.js"></script>
+<script src="js/ang_controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeueMedium.eot');
+    src: url('fonts/HelveticaNeueMedium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/HelveticaNeueMedium.woff') format('woff'),
+    url('fonts/HelveticaNeueMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('fonts/HelveticaNeueBold.eot');
+    src: url('fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/HelveticaNeueBold.woff') format('woff'),
+    url('fonts/HelveticaNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* CSS Document */
+/*Small Mobile Devices Portrait*/
+body{
+    padding:0;
+    margin: 0;
+    font-family: 'HelveticaNeue';
+}
+
+.product-list > ul{
+    list-style: none;
+    padding:0;
+}
+p{
+    -webkit-margin-before:0 !important;
+    -webkit-margin-after:0 !important;
+}
+
+@media only screen and (min-width:320px){
+	.wr-outer{
+        width:100%;
+        height: 55px;
+    }
+    .wr-row{
+        padding:0 3%;
+    }
+
+    .product-list > ul > li{
+        display: block;
+    }
+
+    .pr-name{
+        display: block;
+    }
+
+    .pr-seller{
+        height: 50px;
+        padding:10px 0;
+        display: table;
+        width: 100%;
+        text-align: left;
+    }
+
+    .pr-seller img{
+        width:60px;
+        height: 60px;
+        border-radius:50%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .pr-au-name{
+        display: table-cell;
+        vertical-align: middle;
+        padding-left:10px;
+        color: #4f5dcd;
+        text-align: left;
+        width:60%;
+        font-family: 'HelveticaNeueBold';
+    }
+
+    .pr-distance{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+        color: #999999;
+    }
+    .pr-distance span:first-child{
+        font-family: 'HelveticaNeueBold';
+        padding-right: 0px;
+    }
+    .pr-image{
+        margin: 0 -3%;
+        width:106%;
+        height: auto;
+        position: relative;
+    }
+
+    .pr-image img{
+        width:100%;
+        height: auto;
+    }
+    .pr-image-overlay {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+37,0.65+100 */
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+        bottom:5px;
+        left: 0;
+        position: absolute;
+        right:0;
+        top:0;
+        z-index: 0;
+    }
+    .pr-title{
+        position: absolute;
+        bottom: 10px;
+        display: table;
+        width: 100%;
+    }
+    .pr-details h2{
+        font-size: 16px;
+        color:#FFFFFF;
+        font-family: 'HelveticaNeue';
+        font-weight: normal;
+        line-height: 14px;
+        margin-top:2px;
+        margin-bottom: 2px;
+    }
+
+    .pr-details h1{
+        font-size: 16px;
+        font-family: 'HelveticaNeueBold';
+        text-transform: uppercase;
+        color:#FFFFFF;
+        margin-top:2px;
+        margin-bottom: 2px;
+    }
+    .pr-title > div{
+        display: table-cell;
+    }
+
+    .pr-title > div:first-child{
+        width:60%;
+        padding-left: 3%;
+    }
+
+    .pr-title > div:last-child{
+        padding-right: 3%;
+        vertical-align: middle;
+    }
+    .pr-social span{
+        font-size: 30px;
+        color:#FFFFFF;
+        vertical-align: middle;
+    }
+
+    .pr-social a{
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        float:left;
+        text-align: right;
+        width:50%;
+    }
+    .pr-detail{
+        height: auto;
+        display: block;
+    }
+    .pr-likes{
+        display: block;
+        text-decoration: none;
+        color:#4f5dcd;
+        position: relative;
+        padding-left: 20px;
+        font-size: 14px;
+        vertical-align: middle;
+        padding-top: 10px;
+        font-family: 'HelveticaNeueBold';
+    }
+    .pr-likes:before{
+        content: "";
+        width:15px;
+        height: 14px;
+        left:0;
+        position: absolute;
+        background: url("../images/ico-like.png");
+        background-size: 100% 100%;
+    }
+
+    .pr-desc{
+        display: block;
+        font-family: 'HelveticaNeue';
+        color:#666666;
+        font-size: 13px;
+        padding-top:8px;
+    }
+    .pr-hash-tags{
+        padding:0;
+        margin:0;
+    }
+    .pr-hash-tags span{
+        padding-right: 2px;
+        word-wrap: break-word;
+        color:#4f5dcd;
+        font-size: 13px;
+    }
+    .pr-comments{
+        display: block;
+        text-decoration: none;
+        color:#999999;
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    .product-list > ul{
+        margin-top: 0;
+        padding-bottom:50px;
+    }
+    .product-list > ul > li{
+        padding: 5px 0;
+        border-bottom:1px solid #d7d7d7;
+    }
+    .product-list > ul > li:first-child{
+        padding-top:0;
+    }
+
+    .product-list > ul > li:last-child{
+        border-bottom:none;
+    }
+    footer{
+        position: fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        padding: 0 3%;
+        height: 60px;
+        background:#fd629c;
+    }
+    footer ul{
+        list-style: none;
+        display: table;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    footer ul > li:nth-child(3){
+        background: #b14255;
+    }
+    footer ul > li{
+        width:20%;
+        height: 100%;
+        padding: 10px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    footer ul > li img{
+        width:30px;
+        display: block;
+        margin: 0 auto;
+    }
+    body.product-search-page{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7662+0,fe5377+100 */
+
+        background: linear-gradient(to top, #fe5377, #ff7662) fixed;
+
+    }
+
+    .wr-form{
+        padding-top: 100px;
+    }
+
+    .wr-form input.pr-search-input{
+        margin: 0 auto;
+        width: 94%;
+        border:none;
+        border-bottom:1px solid #fec4c2;
+        color:#FFFFFF;
+        background: transparent;
+        font-size: 25px;
+        padding: 5px 10px;
+        font-family: 'HelveticaNeue';
+    }
+    .wr-form input.pr-search-input::-webkit-input-placeholder{
+        color:#fec4c2;
+    }
+
+    /*Range Slider Style Overrides*/
+    .rangeslider__fill{
+        background: #ffe3e4 !important;
+    }
+    .rangeslider{
+        box-shadow: none !important;
+        background: #d23d3a !important;
+    }
+    .rangeslider--horizontal{
+        height: 7px !important;
+    }
+    .rangeslider__handle{
+        border:none !important;
+        width:30px !important;
+        height: 30px !important;
+        background: #FFFFFF !important;
+    }
+    .rangeslider__handle:after{
+        content:none !important;
+    }
+    .form-col{
+        padding:20px 0;
+        color:#FFFFFF;
+    }
+    .form-col output{
+        display: inline-block;
+        vertical-align: middle;
+        font-family: 'HelveticaNeueBold';
+    }
+    .form-col > p{
+        font-size: 18px !important;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .form-col > p > span{
+        display: inline-block;
+        padding-right: 5px;
+        vertical-align: middle;
+    }
+    .form-border{
+        border-bottom:1px solid #e6555f;
+        padding-bottom: 30px;
+    }
+    .form-col h4{
+        text-transform: uppercase;
+        color:#FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'HelveticaNeue';
+    }
+    .form-trends{
+        display: block;
+        word-wrap: break-word;
+    }
+    .form-trends span{
+        display: inline-block;
+        margin:2px;
+        background: #4f5dcd;
+        font-size: 18px;
+        word-wrap: break-word;
+        padding:5px 10px;
+        border-radius:12px;
+        line-height: 15px;
+    }
+
+    .pr-title-link{
+        text-decoration: none;
+    }
+    .pr-comment-box{
+        display: block;
+    }
+    .pr-comment-box ul{
+        list-style: none;
+        padding:0;
+    }
+
+    .pr-comment-box ul li{
+        display: table;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .pr-comment-box ul li img{
+        display: inline-block;
+        width:45px;
+        vertical-align: middle;
+    }
+    .pr-comment-box ul li > div{
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+        width:80%;
+    }
+    .post-name{
+        color:#4f5dcd;
+        font-family: 'HelveticaNeueBold';
+    }
+    .post-comment{
+        font-size: 14px;
+        color:#666666;
+    }
+    .pr-comment-box{
+        border-top:1px solid #d7d7d7;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .footer-comment-box{
+        width:100%;
+        height: 100%;
+        display: table;
+    }
+    .comment-input{
+        width:77%;
+        background: #FFFFFF;
+        border: none;
+        height: 100%;
+        vertical-align: top;
+        margin:0;
+        padding-left: 3%;
+        border-top:1px solid #d7d7d7;
+        font-size: 20px;
+        display: table-cell;
+    }
+    .comment-button{
+        border:none;
+        width:20%;
+        padding: 3%;
+        background: url("../images/ico-comments.png") no-repeat;
+        background-size: 50% 50%;
+        background-position: center;
+        vertical-align: top;
+        display: table-cell;
+        height: 60px;
+    }
+    .footer-product{
+        padding:0;
+    }
+
+    .back-btn-outer{
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        height: 60px;
+        background: #ff6853;
+        width: 100%;
+        display: table;
+        z-index: 1000;
+    }
+    .back-btn-outer > div:first-child{
+        width:20%;
+    }
+    .back-btn-outer > div{
+        display: table-cell;
+    }
+    .back-btn-outer > div:last-child{
+        text-align: center;
+        width: 80%;
+        vertical-align: middle;
+    }
+    .back-btn-outer > div:last-child h2{
+        margin: 0;
+        font-size: 20px;
+        margin-left: -60px;
+        font-family: 'HelveticaNeue';
+        color:#FFFFFF;
+        font-weight:100;
+    }
+    .back-btn-outer .pe-7s-angle-left{
+        font-size: 60px;
+        color: #FFFFFF;
+    }
+    .back-btn-outer + .wr-row{
+        margin-top: 60px;
+    }
+    .gallery-cell img, .gallery-cell{
+        width: 100% !important;
+    }
+    .main-gallery{
+        margin-left: -3%;
+        width:106%;
+    }
+    .product-search-page .form-col:last-child{
+        margin-bottom: 40px;
+    }
+}
+
+/* Mobile Portrait */
+@media only screen and (min-width:414px){
+    .pr-distance span:first-child{
+        font-family: 'HelveticaNeueBold';
+        padding-right: 10px;
+    }
+}
+
+/*Tablet */
+@media only screen and (min-width:768){
+
+}
+
+/*Large Screens*/
+@media only screen and (min-width:1200px){
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>e-Commerce Web Site</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-icons.css"/>
+</head>
+<body ng-app="productapp">
+    <div class="wr-outer" ng-controller="homeProductCtrl">
+        <div class="wr-row">
+            <div class="product-list wr-col">
+                <ul>
+                    <li ng-repeat="products in productlist">
+                        <div class="pr-seller">
+                            <img src="{{ products.product_au_image }}"/>
+                            <span class="pr-au-name">{{ products.product_seller }}</span>
+                            <div class="pr-distance">
+                                <span>{{ products.product_distance }}</span><span>away</span>
+                            </div>
+                        </div>
+                        <div class="pr-image">
+                            <img src="{{ products.product_image }}"/>
+                            <div class="pr-image-overlay">
+                                <div class="pr-title">
+                                    <div class="pr-details">
+                                        <a href="product.html#/Product/{{ products.product_id }}" class="pr-title-link">
+                                            <h2>{{ products.product_name }}</h2>
+                                            <h1>{{ products.product_price }}</h1>
+                                        </a>
+                                    </div>
+                                    <div class="pr-social">
+                                        <a href="#"><span class="pe-7s-share"></span></a>
+                                        <a href="#"><span class="pe-7s-like"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pr-detail">
+                            <a class="pr-likes">{{ products.product_likes }} likes</a>
+                            <p class="pr-desc">{{ products.product_desc }}</p>
+                            <p class="pr-hash-tags">
+                                <span ng-repeat="prhashes in products.product_tags">#{{ prhashes }} </span>
+                            </p>
+                        </div>
+                        <a class="pr-comments" ng-if="products.product_comments.length > 0">View {{ products.product_comments.length }} Comment{{products.product_comments.length > 1? 's' : ''}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html"><img src="images/ico-home.png"/></a>
+            </li>
+            <li>
+                <a><img src="images/ico-love.png"/></a>
+            </li>
+            <li>
+                <a><img src="images/ico-cam.png"/></a>
+            </li>
+            <li>
+                <a><img src="images/ico-user.png"/></a>
+            </li>
+            <li>
+                <a href="product_search.html"><img src="images/ico-search.png"/></a>
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/ng-infinite-scroll.min.js"></script>
+    <script src="js/ang_controller.js"></script>
+</body>
+</html>
